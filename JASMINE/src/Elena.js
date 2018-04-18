@@ -2,9 +2,24 @@ function startApp() {
     'use strict';
 
     const toLeftButton = document.getElementById("toLeft");
+    if (toLeftButton) {
+        toLeftButton.addEventListener('click', moveToLeft, false);
+    }
+    console.log(document.getElementById("toLeft"));
     const toRightButton = document.getElementById("toRight");
-    var leftInput = document.getElementById("leftInput");
-    var rightInput = document.getElementById("rightInput");
+    if (toRightButton) {
+        toRightButton.addEventListener('click', moveToRight, false);
+    }
+
+    if (document.getElementById("leftInput") !== null) {
+        var leftInput = document.getElementById("leftInput");
+    }
+    console.log(leftInput)
+
+    if (document.getElementById("rightInput") !== null) {
+        var rightInput = document.getElementById("rightInput");
+    }
+
 
     function moveToRight() {
         if (leftInput.value !== "") {
@@ -21,8 +36,8 @@ function startApp() {
 
     }
 
-    toRightButton.addEventListener('click', moveToRight);
-    toLeftButton.addEventListener('click', moveToLeft);
+    // toRightButton.addEventListener('click', moveToRight);
+    // toLeftButton.addEventListener('click', moveToLeft);
 
 
 }

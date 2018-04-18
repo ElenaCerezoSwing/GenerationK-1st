@@ -12,7 +12,11 @@
     <script src="lib/jasmine-3.1.0/jasmine-html.js"></script>
     <script src="lib/jasmine-3.1.0/boot.js"></script>
 
+    <!-- include source files here... -->
+    <script src="src/Elena.js"></script>
 
+    <!-- include spec files here... -->
+    <script src="spec/EleSpec.js"></script>
 
 
 </head>
@@ -21,25 +25,24 @@
 
     <div>
         <main>
-            <div class="workArea">
-                <input type="text" class="leftArea" id="leftInput">
+            <input type="text" class="leftArea" id="leftInput">
 
-                <div class="buttons">
-                    <button class="toLeft" id="toLeft">&lt;-</button>
-                    <button class="toRight" id="toRight">-&gt;</button>
-                </div>
-
-                <input type="text" class="rightArea" id="rightInput">
-
+            <div class="buttons">
+                <button class="toLeft" id="toLeft">&lt;-</button>
+                <button class="toRight" id="toRight">-&gt;</button>
             </div>
+
+            <input type="text" class="rightArea" id="rightInput">
         </main>
     </div>
     <!-- include source files here... -->
-    <script src="src/Elena.js"></script>
+    <!-- <script src="src/Elena.js"></script> -->
 
-    <!-- include spec files here... -->
-    <script src="spec/EleSpec.js"></script>
+
+
+
 
 </body>
+
 
 </html>
